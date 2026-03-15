@@ -1,0 +1,146 @@
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+/* Navigation */
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+gap:30px;
+margin:0;
+padding:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00adb5;
+}
+
+/* Hero Section */
+
+.hero{
+background:black;
+color:white;
+text-align:center;
+padding:80px 20px;
+animation:fadeIn 1.5s;
+}
+
+.profile{
+width:160px;
+height:160px;
+border-radius:50%;
+object-fit:cover;
+border:4px solid white;
+margin-bottom:20px;
+}
+
+/* Button */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00adb5;
+color:white;
+text-decoration:none;
+border-radius:25px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#007f86;
+transform:scale(1.05);
+}
+
+/* Sections */
+
+section{
+padding:50px;
+margin:20px;
+background:white;
+border-radius:10px;
+animation:fadeIn 1.2s ease;
+}
+
+/* Skills */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.skill{
+background:#f0f0f0;
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+/* Projects */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.project-card{
+background:#fafafa;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+transition:transform 0.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Fade Animation */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
